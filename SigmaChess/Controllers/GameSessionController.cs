@@ -16,16 +16,16 @@ public class GameSessionController : ControllerBase
     }
     
     [HttpPost("create")]
-    public async Task<ActionResult> CreateGame([FromQuery] string inviteLink, [FromQuery] string gameCreatorTgId)
+    public async Task<ActionResult> CreateGame([FromQuery] string gameId, [FromQuery] string gameCreatorTgId)
     {
-        await _gameSessionRepository.CreateGame(inviteLink, gameCreatorTgId);
+        await _gameSessionRepository.CreateGame(gameId, gameCreatorTgId);
         return CreatedAtAction(nameof(CreateGame), new { gameCreatorTgId }, null);
     }
     
     [HttpPost("accept")]
-    public async Task<ActionResult> AcceptGame([FromQuery] string inviteLink, [FromQuery] string AcceptedByPlayerTgId)
+    public async Task<ActionResult> AcceptGame([FromQuery] string gameId, [FromQuery] string AcceptedByPlayerTgId)
     {
-        await _gameSessionRepository.AcceptGame(inviteLink, AcceptedByPlayerTgId);
+        await _gameSessionRepository.AcceptGame(gameId, AcceptedByPlayerTgId);
         return CreatedAtAction(nameof(AcceptGame), new { AcceptedByPlayerTgId }, null);
     }
 }

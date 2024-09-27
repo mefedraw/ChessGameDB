@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hf4x3lQnswccRKlr8udZCTj7LE+iUWejbpGA7RbHen/kND/7MOKvFFBh1fYZ7qbJVHYj3v113jk1KFy+eRGRtQ==",
+  "dgSpecHash": "FYQbGCh5oso=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\SigmaChess\\SigmaChess.Core\\SigmaChess.Core.csproj",
+  "projectFilePath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\ChessGameDB\\SigmaChess.Core\\SigmaChess.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

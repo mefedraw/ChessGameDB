@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "in+QFV7ZLKe2pIv7Jmfy5JfaSYHhHVcj4/7VkzfvuWD0df3QQebmHOzUlXaquPbUukGr3F162U6+hVpDD3GROw==",
+  "dgSpecHash": "Qh2rdx+CcWA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\SigmaChess\\SigmaChess.DataAccess\\SigmaChess.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\ChessGameDB\\SigmaChess.DataAccess\\SigmaChess.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fyodo.DESKTOP-9A67S1J\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "C:\\Users\\fyodo.DESKTOP-9A67S1J\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.8\\microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",

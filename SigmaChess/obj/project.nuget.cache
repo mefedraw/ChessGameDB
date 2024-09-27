@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IkpdqKlE0+SOKe+5grUztFTf8ib+fyHaNqNN3louONKZwzWvyS8U5Ck38tCzJssfcJ9GJjYGEU/yHScskCBhjg==",
+  "dgSpecHash": "iFj4IzToLEo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\SigmaChess\\SigmaChess\\SigmaChess.csproj",
+  "projectFilePath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\ChessGameDB\\SigmaChess\\SigmaChess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fyodo.DESKTOP-9A67S1J\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\fyodo.DESKTOP-9A67S1J\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.6\\microsoft.aspnetcore.openapi.8.0.6.nupkg.sha512",

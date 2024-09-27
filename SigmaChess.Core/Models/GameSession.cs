@@ -3,14 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SigmaChess.Core.Models;
 
-public class GameSession(string inviteLink, string player1TgId, DateTime createdAt)
+public class GameSession(string gameId, string player1TgId, DateTime createdAt)
 {
     
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
     
-    public string InviteLink { get; set; } = inviteLink;
+    public string GameId { get; set; } = gameId;
+    
+    public GameStatus Status { get; set; } = GameStatus.NotStarted;
     
     [StringLength(30)]
     public string Player1TgId { get; set; } = player1TgId;

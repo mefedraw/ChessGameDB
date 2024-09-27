@@ -3,6 +3,6 @@ using SigmaChess.Core.Models;
 
 public interface IGameSessionRepository
 {
-     Task CreateGame(string inviteLink, string gameCreatorTgId);
-     Task AcceptGame(string inviteLink, string acceptedByPlayerTgId);
+     Task CreateGame(string gameId, string gameCreatorTgId);
+     Task AcceptGame(string gameId, string acceptedByPlayerTgId);
 }

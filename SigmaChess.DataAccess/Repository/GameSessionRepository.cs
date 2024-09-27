@@ -13,18 +13,19 @@ public class GameSessionRepository : IGameSessionRepository
         _context = context;
     }
 
-    public async Task CreateGame(string inviteLink, string gameCreatorTgId)
+    public async Task CreateGame(string gameId, string gameCreatorTgId)
     {
-        var gameSession = new GameSession(inviteLink, gameCreatorTgId, DateTime.UtcNow);
+        var gameSession = new GameSession(gameId, gameCreatorTgId, DateTime.UtcNow);
         await _context.DbGameSession.AddAsync(gameSession);
         await _context.SaveChangesAsync();
     }
 
-    public async Task AcceptGame(string inviteLink, string AcceptedByPlayerTgId)
+    public async Task AcceptGame(string gameId, string acceptedByPlayerTgId)
     {
-        var gameSession = _context.DbGameSession.Single(u => u.InviteLink == inviteLink);
-        gameSession.Player2TgId = AcceptedByPlayerTgId;
+        var gameSession = _context.DbGameSession.Single(u => u.GameId == gameId);
+        gameSession.Player2TgId = acceptedByPlayerTgId;
         gameSession.StartedAt = DateTime.UtcNow;
+        gameSession.Status = GameStatus.InProgress;
         await _context.SaveChangesAsync();
     }
     

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\SigmaChess\\SigmaChess.Core\\SigmaChess.Core.csproj",
+      "projectUniqueName": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\ChessGameDB\\SigmaChess.Core\\SigmaChess.Core.csproj",
       "projectName": "SigmaChess.Core",
-      "projectPath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\SigmaChess\\SigmaChess.Core\\SigmaChess.Core.csproj",
+      "projectPath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\ChessGameDB\\SigmaChess.Core\\SigmaChess.Core.csproj",
       "packagesPath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\SigmaChess\\SigmaChess.Core\\obj\\",
+      "outputPath": "C:\\Users\\fyodo.DESKTOP-9A67S1J\\RiderProjects\\ChessGameDB\\SigmaChess.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fyodo.DESKTOP-9A67S1J\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
