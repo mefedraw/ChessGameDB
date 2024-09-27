@@ -35,4 +35,11 @@ public class GameSessionInfoController : ControllerBase
         _gameSessionInfoRepository.PatchStatus(gameId, gameStatus);
         return Task.FromResult<ActionResult<GameStatus>>(gameStatus);
     }
+
+    [HttpGet("exists")]
+    public Task<ActionResult<bool>> GameExists([FromQuery] string gameId)
+    {
+        var gameExists = _gameSessionInfoRepository.GameExists(gameId);
+        return Task.FromResult<ActionResult<bool>>(gameExists);
+    }
 }

@@ -9,4 +9,6 @@ public interface IGameSessionInfoRepository
     GameStatus GetStatus(string gameId);
     
     Task PatchStatus(string gameId, GameStatus gameStatus);
+    
+    bool GameExists(string gameId);
 }

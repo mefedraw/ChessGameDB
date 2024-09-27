@@ -32,4 +32,9 @@ public class GameSessionInfoRepository : IGameSessionInfoRepository
         currentGame.Status = gameStatus;
         await _context.SaveChangesAsync();
     }
+
+    public bool GameExists(string gameId)
+    {
+        return _context.DbGameSession.Any(u => u.GameId == gameId);
+    }
 }
