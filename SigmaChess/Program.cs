@@ -18,6 +18,7 @@ builder.Services.AddDbContext<AppDbContext>(
 
 builder.Services.AddScoped<IUserAuthRepository, UserAuthRepository>();
 builder.Services.AddScoped<IGameSessionRepository, GameSessionRepository>();
+builder.Services.AddScoped<IGameSessionInfoRepository, GameSessionInfoRepository>();
 
 
 var app = builder.Build();
