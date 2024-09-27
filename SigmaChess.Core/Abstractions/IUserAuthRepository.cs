@@ -4,7 +4,7 @@ public interface IUserAuthRepository
 {
     Task AuthUser(string tgId, string tgUsername, string avatar);
 
-    string UserAvatar(string tgId);
+    Task SetUserAvatar(string tgId, string avatar);
 
     bool UserExists(string tgId);
 }

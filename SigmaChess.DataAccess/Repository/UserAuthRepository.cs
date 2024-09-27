@@ -13,10 +13,11 @@ public class UserAuthRepository : IUserAuthRepository
         _context = context;
     }
 
-    public string UserAvatar(string tgId)
+    public async Task SetUserAvatar(string tgId, string avatar)
     {
-        var userAvatarUrl =  _context.DbUserAuth.Single(u => u.TgId == tgId);
-        return userAvatarUrl.Avatar;
+        var user =  _context.DbUserAuth.Single(u => u.TgId == tgId);
+        user.Avatar = avatar;
+        await _context.SaveChangesAsync();
     }
     
     public async Task AuthUser(string tgId, string tgUsername, string avatar)

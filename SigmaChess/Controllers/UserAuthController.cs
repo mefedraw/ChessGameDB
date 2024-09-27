@@ -30,10 +30,9 @@ public class UserAuthController : ControllerBase
     }
     
     [HttpGet("avatar")]
-    public Task<ActionResult<UserAvatarResponse>> UserAvatar([FromQuery] string tgId)
+    public async Task<ActionResult> SetUserAvatar([FromQuery] string tgId, [FromQuery] string avatar)
     {
-        var userAvatarUrl = _userAuthRepository.UserAvatar(tgId);
-        var response = new UserAvatarResponse(userAvatarUrl);
-        return Task.FromResult<ActionResult<UserAvatarResponse>>(Ok(response));
+         await _userAuthRepository.SetUserAvatar(tgId, avatar);
+         return CreatedAtAction(nameof(SetUserAvatar), new { tgId }, null);
     }
 }
